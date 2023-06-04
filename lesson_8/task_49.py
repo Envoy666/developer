@@ -164,6 +164,7 @@ def delete_record():
     old_entry = all_data[index]
 
     if confirm(old_entry + "\nDelete record? (Y/N): "):
+        all_data.pop(index)
         update_base()
         print("Successfully deleted")
         input("Enter anything to continue...")
